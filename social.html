@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Media - My YouTube Channel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8f9fa;
+    }
+    header {
+      background: linear-gradient(to right, #6C63FF, #9B66FF);
+      color: #FFFFFF;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 1.5em;
+      position: relative;
+      overflow: hidden;
+    }
+    header::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.1);
+      pointer-events: none;
+      animation: animate 5s linear infinite;
+    }
+    @keyframes animate {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(100%);
+      }
+    }
+    nav {
+      background: rgba(0, 0, 0, 0.8);
+      color: #FFFFFF;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 1.5em;
+    }
+    nav a {
+      color: #FFFFFF;
+      text-decoration: none;
+      margin: 0 20px;
+      position: relative;
+      overflow: hidden;
+      transition: 0.5s;
+    }
+    nav a::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: #FFFFFF;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.5s;
+    }
+    nav a:hover::before {
+      transform: scaleX(1);
+    }
+    section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .social-content {
+      margin-bottom: 20px;
+    }
+    .social-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    .social-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 300px;
+      padding: 15px;
+      color: #000000;
+      text-decoration: none;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      transition: background-color 0.3s, transform 0.3s;
+      font-size: 1.2em;
+    }
+    .social-link img {
+      width: 100px;
+      height: 100px;
+      margin-right: 10px;
+    }
+    footer {
+      background: linear-gradient(to right, #6C63FF, #9B66FF);
+      color: #FFFFFF;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Follow Me In Social Media</h1>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="video.html">Videos</a>
+    <a href="social.html">Social Media</a>
+    <a href="about.html">About</a>
+
+  </nav>
+  <section>
+    <div class="social-list">
+      <div class="social-item">
+        <a href="https://instagram.com/taltu_boy/" target="_blank">
+            <img src="D:\user\robin\Documents\Website\Taltu's Website/images/instagram-icon.png" alt="Instagram Icon">
+            <P>CHANNEL INSTAGRAM</P>
+          </a>
+        <a href="https://instagram.com/r.ali_06/" target="_blank">
+            <img src="D:\user\robin\Documents\Website\Taltu's Website/images/instagram-icon.png" alt="Instagram Icon">
+            <P>INSTAGRAM MYSELF</P>
+        </a>
+        <a href="https://discord.gg/zfVk8SkYCD" target="_blank">
+            <img src="D:\user\robin\Documents\Website\Taltu's Website/images/discord-icon.png" alt="Discord Icon">
+            <P>CHANNEL DISCORD</P>
+        </a>
+        <!-- Add more social media items as needed -->
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; Thank You For Visiting My Website.</p>
+  </footer>
+</body>
+</html>
