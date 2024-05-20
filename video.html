@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Videos - My YouTube Channel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8f9fa;
+    }
+    header {
+      background: linear-gradient(to right, #6C63FF, #9B66FF);
+      color: #FFFFFF;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 1.5em;
+      position: relative;
+      overflow: hidden;
+    }
+    header::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.1);
+      pointer-events: none;
+      animation: animate 5s linear infinite;
+    }
+    @keyframes animate {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(100%);
+      }
+    }
+    nav {
+      background: rgba(0, 0, 0, 0.8);
+      color: #FFFFFF;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 1.5em;
+    }
+    nav a {
+      color: #FFFFFF;
+      text-decoration: none;
+      margin: 0 20px;
+      position: relative;
+      overflow: hidden;
+      transition: 0.5s;
+    }
+    nav a::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: #FFFFFF;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.5s;
+    }
+    nav a:hover::before {
+      transform: scaleX(1);
+    }
+    section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .video-list {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    .video-item {
+      background: #FFFFFF;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      width: 300px;
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .video-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    }
+    .video-thumbnail {
+      width: 100%;
+      height: auto;
+      display: block;
+      cursor: pointer;
+    }
+    .video-title {
+      font-size: 1.2em;
+      color: #333333;
+      padding: 10px;
+      text-align: left;
+    }
+    footer {
+      background: linear-gradient(to right, #6C63FF, #9B66FF);
+      color: #FFFFFF;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Watch My Latest Videos</h1>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="video.html">Videos</a>
+    <a href="social.html">Social Media</a>
+    <a href="about.html">About</a>
+
+  </nav>
+  <section>
+    <h2>Our Latest Videos</h2>
+    <div class="video-list">
+      <div class="video-item">
+        <a href="https://youtu.be/8Qy2gB5kHjI?si=H0o4MgldnZoP4c2f" target="_blank">
+          <img src="D:\user\robin\Documents\Website\Taltu's Website/images/IMG_9472.JPG" alt="Video Thumbnail 1" class="video-thumbnail">
+        </a>
+        <div class="video-title">GTA 5 Impossible Bike Parkour (GTA 5 Giveaway)</div>
+      </div>
+      <div class="video-item">
+        <a href="https://youtu.be/9xpCWFhhb-s?si=u75B4Ueccl_cpQW0" target="_blank">
+          <img src="D:\user\robin\Documents\Website\Taltu's Website/images/giveawayvideo.jpg" alt="Video Thumbnail 1" class="video-thumbnail">
+        </a>
+        <div class="video-title">GTA V Giveaway In Mega Ramp Race | Hindi</div>
+      </div>
+      <div class="video-item">
+        <a href="https://youtu.be/i1dfYhmCJKI?si=V-OL6gu0vpwCNHzm" target="_blank">
+          <img src="D:\user\robin\Documents\Website\Taltu's Website/images/94B43EAD-CCEF-4490-9363-8B046A0877E8.jpeg" alt="Video Thumbnail 2" class="video-thumbnail">
+        </a>
+        <div class="video-title">No Lie🔥 (Valorant Montage)</div>
+      </div>
+      <div class="video-item">
+        <a href="https://youtu.be/L_Xz6J5y3Xw?si=T-HqC_8lVcXIFDoE" target="_blank">
+          <img src="D:\user\robin\Documents\Website\Taltu's Website/images/6A2AC7D2-2795-4DD6-A1B5-35BCFD7AC548.jpeg" alt="Video Thumbnail 3" class="video-thumbnail">
+        </a>
+        <div class="video-title">Cold❄️ (Valorant Montage)</div>
+      </div>
+      <div class="video-item">
+        <a href="https://youtu.be/YHxILqMpQ6s?si=Z1jphDetQrCV7vHo" target="_blank">
+          <img src="D:\user\robin\Documents\Website\Taltu's Website/images/maxresdefault.jpg" alt="Video Thumbnail 4" class="video-thumbnail">
+        </a>
+        <div class="video-title">I Found Captain Jack Sparrow's City | Uncharted EP-05</div>
+      </div>
+      <div class="video-item">
+        <a href="https://youtu.be/3ciywuy2C4U?si=toji3YKbjuPQMFL5" target="_blank">
+          <img src="D:\user\robin\Documents\Website\Taltu's Website/images/hqdefault.jpg" alt="Video Thumbnail 4" class="video-thumbnail">
+        </a>
+        <div class="video-title">GTA V Face to Face Highlights With Full Masti</div>
+      </div>
+  </section>
+  <footer>
+    <p>&copy; Thank You For Visiting My Website.</p>
+  </footer>
+</body>
+</html>
